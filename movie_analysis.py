@@ -96,7 +96,7 @@ top_votes_by_genre = (
     .head(1)[["main_genre", "primaryTitle", "numVotes", "averageRating"]]
 )
 
-print("\n🎬 장르별 투표 수 1위 영화:")
+print("\n🎬 Top movie by votes in each genre:")
 print(top_votes_by_genre.to_string(index=False))
 
 #graph
@@ -110,8 +110,6 @@ plt.xlabel("Number of Votes")
 plt.ylabel("Movie Title")
 plt.tight_layout()
 plt.show()
-
-
 
 # 5) votes vs average rating
 plt.figure(figsize=(10,6))
